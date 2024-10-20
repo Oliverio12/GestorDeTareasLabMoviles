@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/fondo1">
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Título"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Descripción"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Fecha"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/btnFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Fecha"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para la Hora de la tarea -->
+    <EditText
+        android:id="@+id/edtHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Hora"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <!-- Botón para seleccionar la Hora -->
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Hora"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón para Guardar los cambios -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+</LinearLayout>

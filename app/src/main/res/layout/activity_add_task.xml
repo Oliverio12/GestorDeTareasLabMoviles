@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/fondo1"
+    tools:context=".AddTaskActivity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18dp"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:textColor="@color/verde"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textColor="@color/purpura"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Fecha"
+            android:textColor="@color/azulOscuro"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azulOscuro"
+            android:text="Fecha"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edtHora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Hora"
+            android:textColor="@color/azulOscuro"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azulOscuro"
+            android:text="Hora"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
+        android:text="Guardar"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
